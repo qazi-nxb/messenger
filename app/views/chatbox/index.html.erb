@@ -1,0 +1,48 @@
+<div class="container-fluid">
+<%= image_tag ("img.png"), class: "rounded mx-auto d-block imgwidth rounded" %>
+</div>
+<br>
+<div class="container">
+<div class="row">
+  <div class="card col-9 cardheight">
+    <div class="card-body">
+      <% @msg.each do |msg| %>
+        <div class="content">
+         <p> <%= link_to msg.user.username %>:  <%= msg.body %></p>
+        </div>
+        <% end %>
+      <div class="content">
+        <div class="input-group mb-3  ">
+          <input type="text" class=" col-11 inputbottom  form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-primary inputbottom btn-outline-secondary" type="button">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card col-3 cardheight">
+  <div class="card-body ">
+    <div class="content">
+    <nav class ="navbar bg-light">
+      <ul class ="nav navbar-nav">
+          <li class ="nav-item " id="lihover" >
+          <a class ="nav-link" href="#"> Home </a>
+        </li>
+        <li class ="nav-item" id="lihover">
+          <a class ="nav-link" href="#"> Services </a>
+        </li>
+        <li class ="nav-item " id="lihover">
+          <a class ="nav-link" href="#"> Contact </a>
+        </li>
+        <li class ="nav-item" id="lihover">
+          <a class ="nav-link" href="#"> Blogs </a>
+        </li>
+      </ul>
+    </nav>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>

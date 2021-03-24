@@ -1,0 +1,54 @@
+@import "bootstrap";
+
+.fright
+{
+  float: right;
+}
+.navicon
+{
+  padding-top: 1px;
+  font-size: 1.2em;
+}
+
+.navlogo
+{
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.imgwidth
+{
+  width: 10%;
+}
+.cardheight
+{
+  height: 450px;
+}
+
+.inputbottom
+{
+  position: fixed;
+  margin-top: 370px;
+}
+#lihover
+{
+  width: 210px;
+  text-align: center
+}
+
+#lihover :hover
+{
+  background-color: #DADADA;
+}
+
+.center
+{
+  text-align: center;
+}
+
+.loginform
+{
+  border: 1px solid black;
+  border-width: medium;
+  height: 300px;
+  border-radius: 5px;
+}
