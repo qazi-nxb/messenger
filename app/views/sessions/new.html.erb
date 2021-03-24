@@ -1,28 +1,32 @@
+
+
 <br><br>
 <div class="container">
 <h1 align="center"> LOGIN</h1>
 </div>
   <div class="container">
 <div class="col-4 offset-4 center loginform">
+  <%= form_for(:session, :html => {class: "forn-horizontal", role: "form"}) do |f| %>"
   <br><br>
     <div class="form-group">
-      <label for="exampleDropdownFormEmail2">Email address</label>
-      <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+      <%= f.label :username %>
+      <%= f.text_field :username, class: "form-control", placeholder: "Enter User name" , autofocus:true %>
     </div>
     <div class="form-group">
-      <label for="exampleDropdownFormPassword2">Password</label>
-      <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+      <%= f.label :password %>
+      <%= f.password_field :password, class: "form-control", placeholder: "Enter password"  %>
     </div>
-
-
     <div class="form-check ">
       <input type="checkbox" class="form-check-input" id="dropdownCheck2"> &nbsp; &nbsp;
       <label class="form-check-label" for="dropdownCheck2">
        <p> Remember me </p>
       </label>
+    </div>
+    <div class="form-group">
+      <%= f.submit "login", class: "btn btn-primary btn-lg" %>
 
     </div>
-
-    <button type="submit" class="btn btn-primary ">Sign in</button>
+  <% end %>
 </div>
+
 </div>
