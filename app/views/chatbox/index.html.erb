@@ -11,14 +11,16 @@
          <p> <%= link_to msg.user.username %>:  <%= msg.body %></p>
         </div>
         <% end %>
-      <div class="content">
-        <div class="input-group mb-3  ">
-          <input type="text" class=" col-11 inputbottom  form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <%= form_for(@message, html: {class: "content", role: "form"}, url: message_path) do |f| %>
+
+        <div class="input-group mb-3 jointop ">
+          <%= f.text_field :body, class: "col-11 inputbottom form-control" %>
           <div class="input-group-append">
-            <button class="btn btn-primary inputbottom btn-outline-secondary" type="button">Send</button>
+            <%= f.button "Send" , class: "btn btn-primary inputbottom btn-outline-secondary" %>
           </div>
         </div>
-      </div>
+
+        <% end %>
     </div>
   </div>
 
