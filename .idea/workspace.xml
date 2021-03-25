@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e5e1f283-1eea-425f-9dd9-f5d3fcbf2247" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/chatbox_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/chatbox_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/flash.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_flash.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +170,7 @@
       <workItem from="1616412893278" duration="16000" />
       <workItem from="1616412910946" duration="1960000" />
       <workItem from="1616567107367" duration="22005000" />
-      <workItem from="1616652945482" duration="2007000" />
+      <workItem from="1616652945482" duration="3357000" />
     </task>
     <servers />
   </component>
