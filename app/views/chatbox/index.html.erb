@@ -5,13 +5,11 @@
 <div class="container">
 <div class="row">
   <div class="card col-9 cardheight">
-    <div class="card-body">
-      <% @msg.each do |msg| %>
-        <div class="content">
-         <p> <%= link_to msg.user.username %>:  <%= msg.body %></p>
-        </div>
-        <% end %>
-      <%= form_for(@message, html: {class: "content", role: "form"}, url: message_path) do |f| %>
+    <div class="card-body" id="msg">
+      <div id="chatcontainer">
+      <%= render 'layouts/chatmsg' %>
+      </div>
+      <%= form_for(@message, html: {class: "content", role: "form"}, url: message_path , remote: true) do |f| %>
 
         <div class="input-group mb-3 jointop ">
           <%= f.text_field :body, class: "col-11 inputbottom form-control" %>
@@ -48,3 +46,32 @@
   </div>
   </div>
 </div>
+
+<script type="text/javascript" charset="utf-8">
+    scroll_bottom = function ()
+    {
+        if($('#msg').length > 0)
+        {
+            $('#msg').scrollTop($('#msg')[0].scrollHeight);
+        }
+    }
+
+    submit_message = function ()
+    {
+        $('#message_body').on('keydown', function (e)
+        {
+            if( e.keyCode == 13)
+            {
+                $('button').click();
+                e.target.value= " ";
+            }
+        })
+    }
+
+    $( document ).ready(function() {
+
+        scroll_bottom();
+        submit_message();
+    });
+
+</script>

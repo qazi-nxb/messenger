@@ -26,8 +26,8 @@
 
 .inputbottom
 {
-  position: fixed;
-  margin-top: 370px;
+  position: relative;
+  margin-top: 20px;
 }
 #lihover
 {
@@ -53,7 +53,7 @@
   border-radius: 5px;
 }
 
-.jointop
+#msg
 {
-
+  overflow: auto;
 }

@@ -17,3 +17,5 @@ ActiveStorage.start()
 
 
 import "bootstrap"
+
+

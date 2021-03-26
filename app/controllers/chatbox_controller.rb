@@ -1,4 +1,5 @@
 class ChatboxController < ApplicationController
+  before_action :require_user
   def index
     if logged_in?
       @message = Message.new
