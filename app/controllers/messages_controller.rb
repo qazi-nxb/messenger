@@ -3,8 +3,8 @@ class MessagesController < ApplicationController
   def create
     message = current_user.messages.build(message_params)
     if message.save
-      ActionCable.server.broadcast "chatroom_channel",
-                                   msg_data: render_data(message)
+      ActionCable.server.broadcast("chatroom_channel",
+                                   {msg_data: render_data(message)})
     end
   end
 
@@ -14,7 +14,7 @@ class MessagesController < ApplicationController
   end
 
   def render_data(message)
-    render( partial: 'layouts/chatmsg', locals: { msg: message })
+    render(partial: 'message', locals: { message: message })
 
   end
 

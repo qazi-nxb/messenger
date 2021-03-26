@@ -7,14 +7,20 @@
   <div class="card col-9 cardheight">
     <div class="card-body" id="msg">
       <div id="chatcontainer">
-      <%= render 'layouts/chatmsg' %>
+
+        <% @messages.each do |message| %>
+          <div class="content">
+            <p> <%= link_to message.user.username %>:  <%= message.body %></p>
+          </div>
+
+      <% end %>
       </div>
       <%= form_for(@message, html: {class: "content", role: "form"}, url: message_path , remote: true) do |f| %>
 
         <div class="input-group mb-3 jointop ">
           <%= f.text_field :body, class: "col-11 inputbottom form-control" %>
           <div class="input-group-append">
-            <%= f.button "Send" , class: "btn btn-primary inputbottom btn-outline-secondary" %>
+            <%= f.button "Send" , class: "btn btn-primary inputbottom btn-outline-secondary", id: "bttn1" %>
           </div>
         </div>
 
@@ -72,6 +78,7 @@
 
         scroll_bottom();
         submit_message();
+
     });
 
 </script>

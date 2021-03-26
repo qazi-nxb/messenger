@@ -75,7 +75,7 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
   #
   config.action_cable.url = "ws:localhost:3000/cable"
+  config.action_cable.disable_request_forgery_protection = true
 
-  config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
   config.action_cable.worker_pool_size = 5
 end
