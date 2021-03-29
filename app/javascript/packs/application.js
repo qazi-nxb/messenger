@@ -10,7 +10,8 @@ import "channels"
 import '../channels/chatroom_channel'
 //= require jquery3
 //= require popper
-//= require bootstrap-sprockets
+//= require bootstrap
+
 
 Rails.start()
 Turbolinks.start()
