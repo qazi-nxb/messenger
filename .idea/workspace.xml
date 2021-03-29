@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5e1f283-1eea-425f-9dd9-f5d3fcbf2247" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
-    </list>
+    <list default="true" id="e5e1f283-1eea-425f-9dd9-f5d3fcbf2247" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,7 +171,7 @@
       <workItem from="1616652945482" duration="9194000" />
       <workItem from="1616666722775" duration="1508000" />
       <workItem from="1616737882089" duration="18351000" />
-      <workItem from="1617011951072" duration="3267000" />
+      <workItem from="1617011951072" duration="3686000" />
     </task>
     <servers />
   </component>
